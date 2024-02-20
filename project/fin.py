@@ -9,7 +9,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 import ast
 
 # Import data
-movies = pd.read_csv(r'C:\Users\Юля\Downloads\movies_metadata.csv')
+movies = pd.read_csv(r'project/movies_metadata.csv')
 movies['adult'] = movies['adult'].map({'True': True, 'False': False})
 movies['release_date'] = pd.to_datetime(movies['release_date'], errors='coerce')
 
